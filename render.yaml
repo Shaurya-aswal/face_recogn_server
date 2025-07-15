@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: sports-celebrity-backend
+    runtime: python
+    buildCommand: ""
+    startCommand: "python server.py"
+    envVars:
+      - key: FLASK_ENV
+        value: production
+    plan: free
